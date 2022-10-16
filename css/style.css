@@ -175,7 +175,7 @@ footer {
   text-decoration: none;
 }
 .footer-language .footer-acc {
-  margin-top: 25px;
+  margin-top: 35px;
 }
 .footer-language .footer-acc a {
   padding-right: 100px;
@@ -188,6 +188,32 @@ footer {
   color: #000000;
   text-decoration: none;
 }
+.footer-language .footer-change-language {
+  margin-top: 35px;
+}
 .footer-language .footer-change-language li {
+  margin-right: 17px;
   display: inline;
+}
+.footer-language .footer-change-language .rus-switch {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFA542;
+}
+.footer-language .footer-change-language .eng-switch {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  color: #101010;
+}
+.footer-social {
+  margin-top: 35px;
+}
+.footer-social li {
+  margin-right: 18px;
+  display: inline;
+  list-style-type: none;
 }
