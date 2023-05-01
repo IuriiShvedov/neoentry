@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <div class="wrapper">
         <header>
@@ -24,10 +23,13 @@
                 </div>
                 <div class="hdr-right">
                     <div class="heart-cart">
-                        <a href=""> <img src="assets/img/heart.svg" alt=""></a>
-                        <a href=""> <img class="shpcrt" src="assets/img/shopping-cart.svg" alt=""></a>
-                        <div class="counter-cart">
-                            <p>0</p>
+                        <div class="heart-counter"><img src="assets/img/heart.svg" alt="">
+                        </div>
+                        <div class="cart-counter" id="header-counter"><a href="./cart.html"><img class="shpcrt"
+                                    src="assets/img/shopping-cart.svg" alt=""></a>
+                            <span class="counter-cart">
+                                0
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -38,10 +40,10 @@
                 <div class="container">
                     <div class="row">
                         <h3 class="product-category-one">Наушники</h3>
-                        <div class="products-wrapper">
-                            <div class="product">
+                        <div class="products-wrapper" id="products-wrap">
+                            <div class="product" data-id="01">
                                 <div class="product-img">
-                                    <img src="assets/img/headph1.png" alt="">
+                                    <img src="assets/img/headph1.png" alt="" class="product-image">
                                 </div>
                                 <div class="product-desc">
                                     <div class="titledescone">
@@ -49,23 +51,21 @@
                                             <a href="" class="product-title">Apple BYZ S852I</a>
                                         </div>
                                         <div class="product-price">
-                                            <p class="product-price-value">2927 ₽</p><span>3527 ₽</span>
+                                            <div class="product-price-value">2927 ₽</div><span>3527 ₽</span>
                                         </div>
                                     </div>
                                     <div class="titledesctwo">
                                         <div class="product-rate">
                                             <span class="active"> <img src="assets/img/rate.svg" alt=""> </span>
-                                            <a href="" class="product-rate-value">4.7</a>
+                                            4.7
                                         </div>
-                                        <div class="desctobuy">
-                                            <a href="" class="to-cart">Купить</a>
-                                        </div>
+                                        <div class="desctobuy" data-cart>Купить</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product">
+                            <div class="product" data-id="02">
                                 <div class="product-img">
-                                    <img src="assets/img/headph2.png" alt="">
+                                    <img src="assets/img/headph2.png" alt="" class="product-image">
                                 </div>
                                 <div class="product-desc">
                                     <div class="titledescone">
@@ -73,23 +73,21 @@
                                             <a href="" class="product-title">Apple EarPods</a>
                                         </div>
                                         <div class="product-price">
-                                            <p class="product-price-value">2327 ₽</p>
+                                            <div class="product-price-value">2327 ₽</div>
                                         </div>
                                     </div>
                                     <div class="titledesctwo">
                                         <div class="product-rate">
                                             <span class="active"> <img src="assets/img/rate.svg" alt=""> </span>
-                                            <a href="" class="product-rate-value">4.5</a>
+                                            4.5
                                         </div>
-                                        <div class="desctobuy">
-                                            <a href="" class="to-cart">Купить</a>
-                                        </div>
+                                        <div class="desctobuy" data-cart>Купить</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product">
+                            <div class="product" data-id="03">
                                 <div class="product-img product-three">
-                                    <img src="assets/img/headph3.png" alt="">
+                                    <img src="assets/img/headph3.png" alt="" class="product-image">
                                 </div>
                                 <div class="product-desc">
                                     <div class="titledescone">
@@ -97,23 +95,21 @@
                                             <a href="" class="product-title">Apple EarPods</a>
                                         </div>
                                         <div class="product-price">
-                                            <p class="product-price-value">2327 ₽</p>
+                                            <div class="product-price-value">2327 ₽</div>
                                         </div>
                                     </div>
                                     <div class="titledesctwo">
                                         <div class="product-rate">
                                             <span class="active"> <img src="assets/img/rate.svg" alt=""> </span>
-                                            <a href="" class="product-rate-value">4.5</a>
+                                            4.5
                                         </div>
-                                        <div class="desctobuy">
-                                            <a href="" class="to-cart">Купить</a>
-                                        </div>
+                                        <div class="desctobuy" data-cart>Купить</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product">
+                            <div class="product" data-id="04">
                                 <div class="product-img">
-                                    <img src="assets/img/headph1.png" alt="">
+                                    <img src="assets/img/headph1.png" alt="" class="product-image">
                                 </div>
                                 <div class="product-desc">
                                     <div class="titledescone">
@@ -121,23 +117,21 @@
                                             <a href="" class="product-title">Apple BYZ S852I</a>
                                         </div>
                                         <div class="product-price">
-                                            <p class="product-price-value">2927 ₽</p><span>3527 ₽</span>
+                                            <div class="product-price-value">2927 ₽</div>
                                         </div>
                                     </div>
                                     <div class="titledesctwo">
                                         <div class="product-rate">
                                             <span class="active"> <img src="assets/img/rate.svg" alt=""> </span>
-                                            <a href="" class="product-rate-value">4.7</a>
+                                            4.7
                                         </div>
-                                        <div class="desctobuy">
-                                            <a href="" class="to-cart">Купить</a>
-                                        </div>
+                                        <div class="desctobuy" data-cart>Купить</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product">
+                            <div class="product" data-id="05">
                                 <div class="product-img">
-                                    <img src="assets/img/headph2.png" alt="">
+                                    <img src="assets/img/headph2.png" alt="" class="product-image">
                                 </div>
                                 <div class="product-desc">
                                     <div class="titledescone">
@@ -145,23 +139,21 @@
                                             <a href="" class="product-title">Apple EarPods</a>
                                         </div>
                                         <div class="product-price">
-                                            <p class="product-price-value">2327 ₽</p>
+                                            <div class="product-price-value">2327 ₽</div>
                                         </div>
                                     </div>
                                     <div class="titledesctwo">
                                         <div class="product-rate">
                                             <span class="active"> <img src="assets/img/rate.svg" alt=""> </span>
-                                            <a href="" class="product-rate-value">4.5</a>
+                                            4.5
                                         </div>
-                                        <div class="desctobuy">
-                                            <a href="" class="to-cart">Купить</a>
-                                        </div>
+                                        <div class="desctobuy" data-cart>Купить</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product">
+                            <div class="product" data-id="06">
                                 <div class="product-img product-three">
-                                    <img src="assets/img/headph3.png" alt="">
+                                    <img src="assets/img/headph3.png" alt="" class="product-image">
                                 </div>
                                 <div class="product-desc">
                                     <div class="titledescone">
@@ -169,26 +161,24 @@
                                             <a href="" class="product-title">Apple EarPods</a>
                                         </div>
                                         <div class="product-price">
-                                            <p class="product-price-value">2327 ₽</p>
+                                            <div class="product-price-value">2327 ₽</div>
                                         </div>
                                     </div>
                                     <div class="titledesctwo">
                                         <div class="product-rate">
                                             <span class="active"> <img src="assets/img/rate.svg" alt=""> </span>
-                                            <a href="" class="product-rate-value">4.5</a>
+                                            4.5
                                         </div>
-                                        <div class="desctobuy">
-                                            <a href="" class="to-cart">Купить</a>
-                                        </div>
+                                        <div class="desctobuy" data-cart>Купить</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <h3 class="product-category-two">Беспроводные наушники</h3>
                         <div class="products-wrapper">
-                            <div class="product">
+                            <div class="product" data-id="07">
                                 <div class="product-img">
-                                    <img src="assets/img/headph4.jpg" alt="">
+                                    <img src="assets/img/headph4.jpg" alt="" class="product-image">
                                 </div>
                                 <div class="product-desc">
                                     <div class="titledescone">
@@ -196,23 +186,21 @@
                                             <a href="" class="product-title">Apple AirPods</a>
                                         </div>
                                         <div class="product-price">
-                                            <p class="product-price-value">9527 ₽</p>
+                                            <div class="product-price-value">9527 ₽</div>
                                         </div>
                                     </div>
                                     <div class="titledesctwo">
                                         <div class="product-rate">
                                             <span class="active"> <img src="assets/img/rate.svg" alt=""> </span>
-                                            <a href="" class="product-rate-value">4.5</a>
+                                            4.5
                                         </div>
-                                        <div class="desctobuy">
-                                            <a href="" class="to-cart">Купить</a>
-                                        </div>
+                                        <div class="desctobuy" data-cart>Купить</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product">
+                            <div class="product" data-id="08">
                                 <div class="product-img">
-                                    <img src="assets/img/headph5.jpg" alt="">
+                                    <img src="assets/img/headph5.jpg" alt="" class="product-image">
                                 </div>
                                 <div class="product-desc">
                                     <div class="titledescone">
@@ -220,23 +208,21 @@
                                             <a href="" class="product-title">GERLAX GH-04</a>
                                         </div>
                                         <div class="product-price">
-                                            <p class="product-price-value">6527 ₽</p>
+                                            <div class="product-price-value">6527 ₽</div>
                                         </div>
                                     </div>
                                     <div class="titledesctwo">
                                         <div class="product-rate">
                                             <span class="active"> <img src="assets/img/rate.svg" alt=""> </span>
-                                            <a href="" class="product-rate-value">4.5</a>
+                                            4.5
                                         </div>
-                                        <div class="desctobuy">
-                                            <a href="" class="to-cart">Купить</a>
-                                        </div>
+                                        <div class="desctobuy" data-cart>Купить</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product">
+                            <div class="product" data-id="09">
                                 <div class="product-img">
-                                    <img class="boro" src="assets/img/headph6.jpg" alt="">
+                                    <img src="assets/img/headph6.jpg" alt="" class="product-image">
                                 </div>
                                 <div class="product-desc">
                                     <div class="titledescone">
@@ -244,17 +230,15 @@
                                             <a href="" class="product-title">BOROFONE BO4</a>
                                         </div>
                                         <div class="product-price">
-                                            <p class="product-price-value">7527 ₽</p>
+                                            <div class="product-price-value">7527 ₽</div>
                                         </div>
                                     </div>
                                     <div class="titledesctwo">
                                         <div class="product-rate">
                                             <span class="active"> <img src="assets/img/rate.svg" alt=""> </span>
-                                            <a href="" class="product-rate-value">4.5</a>
+                                            4.5
                                         </div>
-                                        <div class="desctobuy">
-                                            <a href="" class="to-cart">Купить</a>
-                                        </div>
+                                        <div class="desctobuy" data-cart>Купить</div>
                                     </div>
                                 </div>
                             </div>
@@ -294,12 +278,14 @@
                 </div>
             </div>
         </footer>
-
-
-
-
     </div>
+    <script src="./js/goods.js"></script>
+    <script src="./js/roots.js"></script>
+    <script src="./js/sessionStorageUtil.js"></script>
 
+    
+    <script src="./js/header-counter.js"></script>
+    <script src="./js/generate-cards.js"></script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
@@ -314,6 +300,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

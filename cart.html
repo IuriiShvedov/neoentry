@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,78 +13,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="hdr-left">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/QPICK.svg" alt="logopic">
-                </a>
-            </div>
-            <div class="hdr-right">
-                <div class="heart-cart">
-                    <a href=""> <img src="assets/img/heart.svg" alt=""></a>
-                    <a href=""> <img class="shpcrt" src="assets/img/shopping-cart.svg" alt=""></a>
-                    <div class="counter-cart">
-                        <p>0</p>
+    <div class="cart-body-wrapper">
+        <header>
+            <div class="container-fluid">
+                <div class="hdr-left">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/QPICK.svg" alt="logopic">
+                    </a>
+                </div>
+                <div class="hdr-right">
+                    <div class="heart-cart">
+                        <div class="heart-counter"><img src="assets/img/heart.svg" alt="">
+                        </div>
+                        <div class="cart-counter" id="header-counter"><a href="./cart.html"><img class="shpcrt"
+                                    src="assets/img/shopping-cart.svg" alt=""></a>
+                            <span class="counter-cart">
+                                0
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main>
-        <h3>Корзина</h3>
-        <div class="cart-left-side">
-            <div class="section-cartone">
-                <div class="cartimg"><img src="assets/img/headph1.png" alt=""></div>
-                <div class="cartnameprice">
-                    <div class="cartname"><p>Apple BYZ S852I</p></div>
-                    <div class="cartprice"><p>2 927 ₽</p></div>
+        </header>
+        <main>
+            <h3>Корзина</h3>
+            <div class="cart-main-wrapper">
+                <div class="cart-left-side">
                 </div>
-                <div class="cartdelete"><img src="assets/img/delete.svg" alt=""></div>
-            </div>
-            <div class="section-carttwo">
-                <div class="cartcounter">
-                    <a href=""><img src="assets/img/minus.svg" alt=""></a>
-                    <p>1</p>
-                    <a href=""><img src="assets/img/plus.svg" alt=""></a>
+                <div class="cart-right-side">
+                    <div class="right-side-wrapper">
+                        <div class="amount-counter">ИТОГО
+                            <div class="amount-sum">₽ 2 927</div>
+                        </div>
+                        <div class="purchase-wrapper">Перейти к оформлению</div>
+                    </div>
                 </div>
-                <div class="cartpriceamount"><p>2 927 ₽</p></div>
-            </div>
-        </div>
-        <div class="cart-right-side"></div>
-    </main>
+        </main>
 
-    <footer>
-        <div class="footer-main">
-            <div class="footer-logo"><img class="qlogo" src="assets/img/QPICK.svg" alt=""></div>
-            <div class="footer-menu">
-                <ul>
-                    <li><a href="">Избранное</a></li>
-                    <li><a href="">Корзина</a></li>
-                    <li><a href="">Контакты</a></li>
-                </ul>
-            </div>
-            <div class="footer-language">
-                <div class="footer-acc">
-                    <a href="">Условия сервиса</a>
-                </div>
-                <div class="footer-change-language">
+        <footer>
+            <div class="footer-main">
+                <div class="footer-logo"><img class="qlogo" src="assets/img/QPICK.svg" alt=""></div>
+                <div class="footer-menu">
                     <ul>
-                        <li><img src="assets/img/RU.svg" alt=""></li>
-                        <li><a class="rus-switch" href="">Рус</a></li>
-                        <li><a class="eng-switch" href="">Eng</a></li>
+                        <li><a href="">Избранное</a></li>
+                        <li><a href="">Корзина</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-language">
+                    <div class="footer-acc">
+                        <a href="">Условия сервиса</a>
+                    </div>
+                    <div class="footer-change-language">
+                        <ul>
+                            <li><img src="assets/img/RU.svg" alt=""></li>
+                            <li><a class="rus-switch" href="">Рус</a></li>
+                            <li><a class="eng-switch" href="">Eng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <ul>
+                        <li><a href=""><img src="assets/img/VK.svg" alt=""></a> </li>
+                        <li><a href=""><img src="assets/img/Telegram.svg" alt=""></a> </li>
+                        <li><a href=""><img src="assets/img/Whatsapp.svg" alt=""></a> </li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-social">
-                <ul>
-                    <li><a href=""><img src="assets/img/VK.svg" alt=""></a> </li>
-                    <li><a href=""><img src="assets/img/Telegram.svg" alt=""></a> </li>
-                    <li><a href=""><img src="assets/img/Whatsapp.svg" alt=""></a> </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <script src="./js/goods.js"></script>
+    <script src="./js/roots.js"></script>
+    <script src="./js/sessionStorageUtil.js"></script>
+
+    
+    <script src="./js/header-counter.js"></script>
+
+    <script src="./js/goods-in-cart.js"></script>
+    <script src="./js/shopping-counters.js"></script>
 </body>
+
 </html>
