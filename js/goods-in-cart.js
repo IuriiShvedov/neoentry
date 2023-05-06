@@ -1,4 +1,10 @@
 class Shopping {
+    handleSetSessionStorage(element, id){
+        const {products } = sessionStorageUtil.putProducts(id);
+        shoppingPage.render();
+        headerCounter.render(products.length);
+        calcCartPrice();
+    }
 
     render (){
         const productsStore = sessionStorageUtil.getProducts();
@@ -11,13 +17,13 @@ class Shopping {
                                             <div class="cartimg"><img src="${imgSrc}" alt=""></div>
                                             <div class="cartnameprice">
                                                 <div class="cartname">
-                                                    <p>${title}</p>
+                                                    <p class="cartname-text">${title}</p>
                                                 </div>
                                                 <div class="cartprice">
                                                     ${price} ₽
                                                 </div>
                                             </div>
-                                            <div class="cartdelete"><img src="assets/img/delete.svg" alt=""></div>
+                                            <div class="cartdelete"><img src="assets/img/delete.svg" id="delete-from-cart" alt="delete headphones from cart" onclick="shoppingPage.handleSetSessionStorage(this, '${id}');"></div>
                                         </div>
                                         <div class="section-carttwo">
                                             <div class="cartcounter counter-wrapper">
@@ -28,17 +34,17 @@ class Shopping {
                                                         data-action='plus'></div>
                                             </div>
                                             <div class="cartpriceamount" id="totalCost">
-                                                 ₽
+                                                ${price} ₽
                                             </div>
                                         </div>
                                     </div>
                 `;
             }
         });
-
         ROOT_SHOPPING.innerHTML = htmlCatalog;
     }
 };
 
 const shoppingPage = new Shopping();
 shoppingPage.render();
+calcCartPrice();
