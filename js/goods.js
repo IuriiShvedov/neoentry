@@ -46,7 +46,10 @@ const GOODS = [
         rate: " 4.5",
         sale: " ",
         title: "Apple EarPods"
-    },
+    }
+]
+
+const HEADPHONES = [
     {
         id: "07",
         imgSrc: "assets/img/headph4.jpg",
