@@ -325,7 +325,8 @@ footer {
   justify-content: space-between;
   min-width: 115px;
 }
-.cartdelete{
+
+.cartdelete {
   margin-right: 12px;
 }
 
@@ -398,7 +399,8 @@ footer {
   line-height: 21px;
   color: #1C1C27;
 }
-.cartnameprice{
+
+.cartnameprice {
   display: flex;
   flex-direction: column;
   text-align: left;
